@@ -57,6 +57,30 @@ body{
 
     background-color: white;
 }
+.galleri{
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 2rem 3.5rem;
+}
+
+.galleri img {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 0.5px solid #ccc;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);  
+    padding: 0.5rem;
+
+    max-height: 300px;
+}
+
+
+
+
+
 /* ------- footer  -------*/
 .globalfooter{
     background-color: #002A32;
