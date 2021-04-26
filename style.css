@@ -1,4 +1,10 @@
 /* -------  globala inställningar  -------*/
+@media all and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 body{
     margin: 0;
@@ -75,8 +81,14 @@ body{
     padding: 0.5rem;
 
     max-height: 300px;
+    transition: 0.4s;
 }
 
+.galleri img:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
 
 
 
