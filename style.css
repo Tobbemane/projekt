@@ -1,16 +1,10 @@
 /* -------  globala inställningar  -------*/
-@media all and (max-width: 600px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-}
 
 body{
     margin: 0;
     padding: 0;
 }
-.container{
+.startcontainer{
     background-color: #FAF3DD;
 
     display: grid;
@@ -19,7 +13,7 @@ body{
     grid-template-areas: 
     "h h h h"
     "h h h h"
-    "n n n n"
+    "c c c c"
     "c c c c"
     "c c c c"
     "c c c c"
@@ -34,6 +28,26 @@ body{
     "c c c c"
     "f f f f";
 }
+.lokalcontainer{
+    background-color: #e8ccbf;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "h h h h"
+    "n n n n"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "f f f f";
+}
 
 /* -------  header  -------*/
 .globalheader{
@@ -45,23 +59,79 @@ body{
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     
+    height: 125px;
     grid-area: h;
+
 }
 /* -------  nav  -------*/
 .globalnav{
     background-color: #002A32;
-    color: #FAF3DD;
-    
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 25px;
+    color: white;
 
     grid-area: n;
+    display: flex;
+    font-size: 40px;
+    height: 60px;
+    justify-content: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+.globalnav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    
+    width: 800px;
+}
+
+.globalnav__listitem {
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+
+    border-right: 2px solid #485460;
+}
+
+.globalnav__link{
+    color: white;
+    background-color: #1e272e;
+    
+    flex: 1; 
+    text-decoration: none;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.globalnav__listitem:last-of-type {
+    border-right: 0;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .globalnav {
+        height: auto;
+        display: block;
+    }
+
+    .globalnav__list {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 /* -------  content  -------*/
 .content{
     grid-area: c;
 
-    background-color: white;
+    background-image: url(pictures/snowpark2.jpg);
 }
 .galleri{
     width: 80%;
@@ -75,12 +145,13 @@ body{
 .galleri img {
     display: inline-block;
     box-sizing: border-box;
-    background-color: aliceblue;
-    border: 0.5px solid #ccc;
+    background-color: #e6af2e;
+    border: 0.5px solid #e6af2e;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);  
     padding: 0.5rem;
 
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
     transition: 0.4s;
 }
 
@@ -90,9 +161,67 @@ body{
     transition: 0.4s;
 }
 
+.galleri a {
+    text-decoration: none;
+    font-size: 4rem;
+    color: #e6af2e;
+}
+
+.globalcaption{
+    text-align: center;
+    font-size: bold;
+    text-shadow: 5px;
+    
+}
 
 
+.lokalcontent > img{
+    height: auto;
+    width: 500px;
+    border-radius: 5%;
+    border: 10px solid hsla(210, 56%, 36%, 0.45);
+    float: left;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.lokalcontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: k;
+    background-color:#e8ccbf;
+    height: 1200px;
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "p p u u"
+    "p p u u"
+    "j j o o"
+    "j j o o"
+    "i i i i"
+    "i i i i"
+    ;
+*/}
+.bild1{
+        flex: 1;
+}
+.bild2{
+    flex: 1;
+}
+.bild3{
+    
+}
+.lokaltext{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5%;
+    border: 10px solid hsla(210, 56%, 36%, 0.45);
 
+    background-color: white;
+    width: 600px;
+}
 /* ------- footer  -------*/
 .globalfooter{
     background-color: #002A32;
