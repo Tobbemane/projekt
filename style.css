@@ -1,5 +1,31 @@
 /* -------  globala inställningar  -------*/
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
+    
+    .globalnav {
+        height: auto;
+        display: block;
+    }
+
+    .globalnav__list {
+        flex-direction: column;
+        width: 100%;
+    }
+    *{
+        font-size: 1.5rem;
+    }
+    .content{
+        overflow:scroll;
+    }
+    .globalheader{
+        margin-bottom: 5px;
+    }
+
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,7 +33,8 @@ body{
 .startcontainer{
     background-color: #FAF3DD;
 
-    height: 850px;
+    width: 100%;
+    height: 800px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -135,22 +162,8 @@ body{
     border-right: 0;
 }
 
-@media all and (max-width: 600px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
 
-    .globalnav {
-        height: auto;
-        display: block;
-    }
 
-    .globalnav__list {
-        flex-direction: column;
-        width: 100%;
-    }
-}
 
 /* -------  content  -------*/
 .content{
@@ -163,7 +176,7 @@ body{
     width: 80%;
     margin: 2rem auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(auto-fill, 200px);
     justify-content: center;
     gap: 50px;
 }
@@ -282,6 +295,27 @@ width: 350px;
 
 .lokalcontent1bild > .lokaltext{
     height: 700px;
+}
+.pic1{
+    grid-area: pic1;
+}
+.pic2{
+    grid-area: pic2;
+}
+.pic3{
+    grid-area: pic3;
+}
+.pic4{
+    grid-area: pic4;
+}
+.pic5{
+    grid-area: pic5;
+}
+.pic6{
+    grid-area: pic6;
+}
+.pic7{
+    grid-area: pic7;
 }
 
 /* ------- footer  -------*/
