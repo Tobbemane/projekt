@@ -1,5 +1,7 @@
 /* -------  globala inställningar  -------*/
-
+html{
+    height: 100%;
+}
 body{
     margin: 0;
     padding: 0;
@@ -30,6 +32,29 @@ body{
 }
 .lokalcontainer{
     background-color: #e8ccbf;
+    margin: 0;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "h h h h"
+    "n n n n"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "k k k k"
+    "f f f f";
+}
+.lokalcontainer1bild{
+    background-color: #e8ccbf;
+    margin: 0;
+    height: 1300px;
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -59,7 +84,7 @@ body{
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     
-    height: 125px;
+    height: 135px;
     grid-area: h;
 
 }
@@ -131,7 +156,7 @@ body{
 .content{
     grid-area: c;
 
-    background-image: url(pictures/snowpark2.jpg);
+    background-color: #e8ccbf;
 }
 .galleri{
     width: 80%;
@@ -145,13 +170,14 @@ body{
 .galleri img {
     display: inline-block;
     box-sizing: border-box;
-    background-color: #e6af2e;
-    border: 0.5px solid #e6af2e;
+    background-color: hsla(210, 56%, 36%, 0.45);
+    border: 0.5px solid hsla(210, 56%, 36%, 0.45);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);  
     padding: 0.5rem;
+    border-radius: 5%;
 
     width: 300px;
-    height: 300px;
+    height: auto;
     transition: 0.4s;
 }
 
@@ -164,7 +190,7 @@ body{
 .galleri a {
     text-decoration: none;
     font-size: 4rem;
-    color: #e6af2e;
+    color: hsla(210, 56%, 36%, 0.45);
 }
 
 .globalcaption{
@@ -177,44 +203,45 @@ body{
 
 .lokalcontent > img{
     height: auto;
-    width: 500px;
+    
     border-radius: 5%;
     border: 10px solid hsla(210, 56%, 36%, 0.45);
-    float: left;
+    
     margin: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .lokalcontent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     grid-area: k;
     background-color:#e8ccbf;
     height: 1200px;
-    /*display: grid;
+    
+    grid-gap: 40px;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-    "p p u u"
-    "p p u u"
-    "j j o o"
-    "j j o o"
-    "i i i i"
-    "i i i i"
+    "b t t p"
+    "b t t p"
+    "u t t p"
+    "u t t p"
     ;
-*/}
+}
 .bild1{
-        flex: 1;
+    grid-area: b;
+    width: 550px;
 }
 .bild2{
-    flex: 1;
+grid-area: p;
+width: 450px;
 }
 .bild3{
-    
+    grid-area: u;
+    width: 550px;
 }
 .lokaltext{
+    grid-area: t;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
     border-radius: 5%;
     border: 10px solid hsla(210, 56%, 36%, 0.45);
@@ -222,6 +249,40 @@ body{
     background-color: white;
     width: 600px;
 }
+.underrubriker{
+    margin: 0;
+}
+.lokalcontent1bild{
+    grid-area: k;
+    background-color:#e8ccbf;
+    
+    
+    grid-gap: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "b b t t"
+    "b b t t"
+    "b b t t"
+    "b b t t"
+    ;
+}
+.lokalcontent1bild > img{
+    height: auto;
+    
+    border-radius: 5%;
+    border: 10px solid hsla(210, 56%, 36%, 0.45);
+    
+    margin: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 900px;
+}
+
+.lokalcontent1bild > .lokaltext{
+    height: 1fr;
+}
+
 /* ------- footer  -------*/
 .globalfooter{
     background-color: #002A32;
