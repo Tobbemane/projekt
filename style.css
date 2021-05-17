@@ -1,8 +1,12 @@
 /* -------  globala inställningar  -------*/
+h1{
+    margin: 0;
+    padding: 20px;
+}
 @media screen and (max-width: 900px){
-    .content{
+    /* .content{
         overflow: scroll;
-    }
+    } */
 }
 @media screen and (max-width: 600px) {
     body {
@@ -12,8 +16,9 @@
 
     
     .globalnav {
-        height: 50px;
+        height: 55px;
         display: block;
+        margin: 0;
     }
 
     .globalnav__list {
@@ -23,9 +28,9 @@
     *{
         font-size: 25px;
     }
-    .content{
+    /* .content{
         overflow:scroll;
-    }
+    } */
     .globalnav{
         height: 125px;
     }
@@ -35,24 +40,17 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .startcontainer{
     background-color: #FAF3DD;
 
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
     "h h h h"
-    "h h h h"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
     "c c c c"
     "c c c c"
     "c c c c"
@@ -65,10 +63,10 @@ body{
     background-color: #e8ccbf;
     margin: 0;
     
-    height: 1300px;
+    /* height: 1300px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    /* grid-template-rows: repeat(12, 1fr); */
     grid-template-areas: 
     "h h h h"
     "n n n n"
@@ -86,7 +84,7 @@ body{
 .lokalcontainer1bild{
     background-color: #e8ccbf;
     margin: 0;
-    height: 1100px;
+   /*  height: 1100px;
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -103,7 +101,7 @@ body{
     "k k k k"
     "k k k k"
     "k k k k"
-    "f f f f";
+    "f f f f"; */
 }
 
 /* -------  header  -------*/
@@ -154,7 +152,7 @@ body{
 
 .globalnav__link{
     color: white;
-    background-color: #1e272e;
+    background-color: #002A32;
     
     flex: 1; 
     text-decoration: none;
@@ -173,7 +171,7 @@ body{
 .content{
     grid-area: c;
     
-    height: 100%;
+    /* height: 100%; */
     background-color: #e8ccbf;
 }
 .galleri{
@@ -233,11 +231,11 @@ body{
     grid-area: k;
     background-color:#e8ccbf;
     
-    overflow: scroll;
+    /* overflow: scroll; */
     grid-gap: 25px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "b"
     "t"
     "p"
@@ -246,7 +244,7 @@ body{
 }
 @media screen and (min-width: 600px) {
     .lokalcontent{
-        overflow: scroll;
+        /* overflow: scroll; */
         grid-gap: 25px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -260,8 +258,9 @@ body{
 }
 @media screen and (min-width: 900px) {
     .lokalcontent{
-    overflow: hidden;
-    height: 900px;
+    /* overflow: hidden; */
+    /* height: 900px; */
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
@@ -282,10 +281,10 @@ body{
     .lokalcontent1bild {
         overflow: hidden;
 
-        
-        grid-gap: 250px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        display: grid;
+        /*grid-gap: 250px;*/
+        grid-template-columns: auto 1fr;
+        /* grid-template-rows: repeat(5, 1fr); */
         grid-template-areas: 
         "b t"
         "b t"
@@ -297,8 +296,9 @@ body{
         width: 700px;
     }   
     .lokalcontent1bild > .lokaltext{
-        height: 700px;
-    }
+        width: 900px;
+        margin: 10px;
+    } 
 }
 
 .bild1{
@@ -314,6 +314,7 @@ grid-area: p;
     grid-area: t;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    margin: 10px;
     padding: 10px;
     border-radius: 5%;
     border: 10px solid hsla(210, 56%, 36%, 0.45);
@@ -324,7 +325,7 @@ grid-area: p;
 .underrubriker{
     margin: 0;
 }
-.lokalcontent1bild{
+/* .lokalcontent1bild{
     grid-area: k;
     background-color:#e8ccbf;
     grid-gap: 25px;
@@ -339,7 +340,7 @@ grid-area: p;
     "t"
     "t"
     ;
-}
+} */
 .lokalcontent1bild > img{
     height: auto;
     
