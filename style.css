@@ -57,7 +57,7 @@ body{
     background-color: #8797B2;
     margin: 0;
     
-    height: 100%px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: repeat(12, 1fr); */
