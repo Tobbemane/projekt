@@ -295,6 +295,7 @@ body{
     .lokalcontent1bild > .lokaltext{
         width: 900px;
         margin: 10px;
+        height: auto;
     } 
 }
 
@@ -324,7 +325,7 @@ grid-area: p;
 }
 .lokalcontent1bild{
     background-color: #e8ccbf;
-    height: 100%;
+    height: auto;
 } 
 .lokalcontent1bild > img{
     height: auto;
