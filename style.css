@@ -42,7 +42,7 @@ body{
 .startcontainer{
     background-color: #8797B2;
 
-    height: auto;
+    height: 100%;
     width: 100%;
     
     display: grid;
@@ -50,11 +50,6 @@ body{
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "h h h h"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
-    "c c c c"
     "c c c c"
     "f f f f";
 }
@@ -345,6 +340,7 @@ grid-area: p;
     background-color: #002A32;
     color: antiquewhite;
 
+    height: auto;
     grid-area: f;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 5px;
