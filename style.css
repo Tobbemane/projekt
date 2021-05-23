@@ -3,6 +3,9 @@ h1{
     margin: 0;
     padding: 20px;
 }
+html, body{
+    height: 100%;
+}
 
 @media screen and (max-width: 600px) {
     body {
