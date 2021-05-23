@@ -324,6 +324,7 @@ grid-area: p;
 }
 .lokalcontent1bild{
     background-color: #e8ccbf;
+    height: 100%;
 } 
 .lokalcontent1bild > img{
     height: auto;
