@@ -46,7 +46,7 @@ body{
     /* height: 800px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "h h h h"
     "c c c c"
