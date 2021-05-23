@@ -3,11 +3,7 @@ h1{
     margin: 0;
     padding: 20px;
 }
-@media screen and (max-width: 900px){
-    /* .content{
-        overflow: scroll;
-    } */
-}
+
 @media screen and (max-width: 600px) {
     body {
         margin: 0;
@@ -28,13 +24,12 @@ h1{
     *{
         font-size: 25px;
     }
-    /* .content{
-        overflow:scroll;
-    } */
+    .content{
+        height: 100%;
+    }
     .globalnav{
         height: 125px;
     }
-
 }
 body{
     margin: 0;
@@ -42,7 +37,7 @@ body{
 }
 
 .startcontainer{
-    background-color: #FAF3DD;
+    background-color: #8797B2;
 
     width: 100%;
     /* height: 800px; */
@@ -60,7 +55,7 @@ body{
     "f f f f";
 }
 .lokalcontainer{
-    background-color: #e8ccbf;
+    background-color: #8797B2;
     margin: 0;
     
     /* height: 1300px; */
@@ -82,7 +77,7 @@ body{
     "f f f f";
 }
 .lokalcontainer1bild{
-    background-color: #e8ccbf;
+    background-color: #8797B2;
     margin: 0;
    /*  height: 1100px;
     
@@ -281,6 +276,7 @@ body{
     .lokalcontent1bild {
         overflow: hidden;
 
+        background-color: #e8ccbf;
         display: grid;
         /*grid-gap: 250px;*/
         grid-template-columns: auto 1fr;
@@ -325,22 +321,9 @@ grid-area: p;
 .underrubriker{
     margin: 0;
 }
-/* .lokalcontent1bild{
-    grid-area: k;
-    background-color:#e8ccbf;
-    grid-gap: 25px;
-    display: grid;
-    
-    overflow: scroll;
-    grid-gap: 25px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "b"
-    "b"
-    "t"
-    "t"
-    ;
-} */
+.lokalcontent1bild{
+    background-color: #e8ccbf;
+} 
 .lokalcontent1bild > img{
     height: auto;
     
